@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <!-- NAVBAR -->
+    <div class="navbar">
+        Student Portal
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+            <input type="text" class="input" id="inputEle" placeholder="Search">
+            <button onclick="submit()" class="btn">Search</button>
+    </div>
+
+    <!-- FUNCTIONS -->
+    <div class="functions">
+        <button class="btn-primary btn" type="submit" onclick="sortByAsc()">Sort A->Z</button>
+        <button class="btn-primary btn" type="submit" onclick="sortByDsc()">Sort Z->A</button>
+        <button class="btn-primary btn" type="submit" onclick="sortByMarks()">Sort By Marks</button>
+        <button class="btn-primary btn" type="submit" onclick="sortByPassing()">Sort By Passing</button>
+        <button class="btn-primary btn" type="submit" onclick="sortByClass()">Sort By Class</button>
+        <button class="btn-primary btn" type="submit" onclick="sortByGender()">Sort By Gender</button>
+    </div>
+
+    <img src="" alt="">
+    <!-- TABLE  -->
+    <table class="table" id="studentData">
+        <thead class="thead">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Marks</th>
+                <th>Passing</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <!-- <tbody class="tbody">
+            <tr>
+                <td>1</td>
+                <td>Ganesh</td>
+                <td>Male</td>
+                <td>1st</td>
+                <td>30</td>
+                <td>27</td>
+                <td>ganesh@gmail.com</td>
+            </tr>
+        </tbody> -->
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
